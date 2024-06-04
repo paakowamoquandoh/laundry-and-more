@@ -20,8 +20,8 @@
 /* Colors */
 :root {
   --color-default: #2b180d;
-  --color-primary: #56b8e6;
-  --color-secondary: #1b2f45;
+  --color-primary: teal;
+  --color-secondary: orange;
 }
 
 /* Smooth scroll behavior */
@@ -195,6 +195,10 @@ section {
   overflow: hidden;
   background: #fff;
   transition: all 0.6s ease-out;
+  -webkit-transition: all 0.6s ease-out;
+  -moz-transition: all 0.6s ease-out;
+  -ms-transition: all 0.6s ease-out;
+  -o-transition: all 0.6s ease-out;
 }
 
 #preloader:before {
@@ -208,16 +212,25 @@ section {
   width: 60px;
   height: 60px;
   animation: animate-preloader 1s linear infinite;
+  -webkit-animation: animate-preloader 1s linear infinite;
 }
 
 @keyframes animate-preloader {
   0% {
     transform: rotate(0deg);
-  }
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+}
 
   100% {
     transform: rotate(360deg);
-  }
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+}
 }
 
 /*--------------------------------------------------------------
@@ -244,8 +257,14 @@ section {
   }
 }
 
+@media (max-width: 600px) {
+  .header .logo h1 b{
+    color: var(--color-secondary);
+  }
+}
+
 .header.sticked {
-  background: rgba(27, 47, 69, 0.9);
+  background: var(--color-secondary);
   padding: 12px 0;
 }
 
@@ -495,7 +514,7 @@ section {
 .hero {
   width: 100%;
   min-height: 100vh;
-  background: url("../img/hero-bg.jpg") top center;
+  background: url("../img/osegs/osegs.jpg") top center;
   background-size: cover;
   position: relative;
   padding: 120px 0;
@@ -599,6 +618,8 @@ section {
   .hero h2 {
     font-size: 36px;
     line-height: 1;
+    text-align: center;
+    color: var(--color-secondary);
   }
 
   .hero .btn-get-started,
@@ -761,7 +782,7 @@ section {
 # Call To Action Section
 --------------------------------------------------------------*/
 .call-to-action {
-  background: linear-gradient(rgba(27, 47, 69, 0.8), rgba(27, 47, 69, 0.8)), url("../img/cta-bg.jpg") center center;
+  background: linear-gradient(rgba(27, 47, 69, 0.8), rgba(27, 47, 69, 0.8)), url("../img/osegs/oseg9.jpeg") center center;
   background-size: cover;
   padding: 100px 0;
 }

@@ -117,7 +117,7 @@ section {
 .breadcrumbs h2 {
   font-size: 56px;
   font-weight: 500;
-  color: #fff;
+  color: var(--color-secondary);
   font-family: var(--font-secondary);
 }
 
@@ -264,7 +264,7 @@ section {
 }
 
 .header.sticked {
-  background: var(--color-secondary);
+  background: white;
   padding: 12px 0;
 }
 
@@ -276,7 +276,7 @@ section {
 .header .logo h1 {
   font-size: 30px;
   font-weight: 700;
-  color: #fff;
+  color: #ffffff;
   font-family: var(--font-secondary);
   margin: 0;
 }
@@ -326,7 +326,7 @@ section {
   .navbar .active,
   .navbar .active:focus,
   .navbar li:hover>a {
-    color: #fff;
+    color: var(--color-secondary);
   }
 
   .navbar .dropdown ul {
@@ -396,6 +396,7 @@ section {
 }
 
 @media (min-width: 1280px) {
+  
 
   .mobile-nav-show,
   .mobile-nav-hide {
@@ -454,7 +455,8 @@ section {
   .navbar .active,
   .navbar .active:focus,
   .navbar li:hover>a {
-    color: #fff;
+    color: var(--color-secondary);
+    font-weight: bold;
   }
 
   .navbar .dropdown ul,
@@ -463,7 +465,7 @@ section {
     display: none;
     padding: 10px 0;
     margin: 10px 20px;
-    background-color: rgba(20, 35, 51, 0.6);
+    background-color: rgba(201, 173, 12, 0.6);
   }
 
   .navbar .dropdown>.dropdown-active,
@@ -472,7 +474,7 @@ section {
   }
 
   .mobile-nav-show {
-    color: rgba(255, 255, 255, 0.9);
+    color:var(--color-secondary);
     font-size: 28px;
     cursor: pointer;
     line-height: 0;
